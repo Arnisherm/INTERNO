@@ -1,0 +1,237 @@
+.singlecard {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.singlecard__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+.singlecard__image {
+    width: 590px;
+    height: auto;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.singlecard__info {
+    max-width: 550px;
+}
+.singlecard__info p {
+    font-family: 'Jost';
+    font-size: clamp(16px, 3vw, 22px);
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: #4D5053;
+    margin-bottom: 30px;
+}
+.singlecard__details {
+    background-color: #fff;
+    padding: 0;
+}
+.singlecard__details .details__mail::before,
+.singlecard__details .details__phone::before,
+.singlecard__details .details__site::before  {
+    background-color: #F4F0EC;
+}
+.biography {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.biography__inner p {
+    font-family: 'Jost';
+    font-size: clamp(16px, 3vw, 22px);
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: #4D5053;
+}
+.biography__inner p:not(:last-child) {
+    margin-bottom: 30px;
+}
+.biography__title {
+    margin-bottom: 18px;
+}
+.biography__block {
+    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.block__skills {
+    max-width: 585px;
+}
+.sub-section-title {
+    font-size: clamp(22px, 3vw, 25px);
+}
+.skills__item + .skills__item {
+    margin-top: 20px;
+}
+.skills__item-hedding {
+    position: relative;
+    max-width: 534px;
+    display: flex;
+    align-items: center;
+}
+.skills__item-hedding:before {
+    position: absolute;
+    font-family: 'Jost';
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: #4D5053;
+}
+.skills__item-hedding-1:before {
+    content: '65%';
+    left: 65%;
+}
+.skills__item-hedding-2:before {
+    content: '95%';
+    left: 95%;
+}
+.skills__item-hedding-3:before {
+    content: '75%';
+    left: 75%;
+}
+.skills__item-title {
+    font-family: 'Jost';
+    font-size: clamp(16px, 3vw, 22px);
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: #4D5053;
+}
+.skills__item-graff-1 span,
+.skills__item-graff-2 span,
+.skills__item-graff-3 span {
+    position: relative;
+    display: block;
+    max-width: 534px;
+    height: 5px;
+    background-color: #F4F0EC;
+    color: #F4F0EC;
+}
+.skills__item-graff-1 span::before,
+.skills__item-graff-2 span::before,
+.skills__item-graff-3 span::before {
+    position: absolute;
+    content: '';
+    height: 5px;
+    top: 0;
+    left: 0;
+    background-color: #CDA274;
+}
+.skills__item-graff-1 span::before {
+    width: 65%;
+}
+.skills__item-graff-2 span::before {
+    width: 95%;
+}
+.skills__item-graff-3 span::before {
+    width: 75%;
+}
+.skills__item-graff-1 span::after,
+.skills__item-graff-2 span::after,
+.skills__item-graff-3 span::after {
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    top: -9px;
+    border: 5px solid #CDA274;
+    z-index: 5;
+}
+.skills__item-graff-1 span::after {
+    left: 65%;
+}
+.skills__item-graff-2 span::after {
+    left: 95%;
+}
+.skills__item-graff-3 span::after {
+    left: 75%;
+}
+.block__questions {
+    max-width: 529px;
+}
+.block__questions p {
+    font-family: 'Jost';
+    font-size: clamp(16px, 3vw, 22px);
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: #4D5053;
+    margin-bottom: 20px;
+}
+.block__questions-title,
+.block__skills-title {
+    margin-bottom: 12px;
+}
+.block__questions-content .accordion {
+    border: 1px solid #CDA274;
+    border-radius: 18px;
+    padding: 14px 22px;
+}
+.block__questions-content .accordion__title {
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: clamp(14px, 3vw, 18px);
+    line-height: 1.25;
+    letter-spacing: 0.3px;
+    margin: 0;
+}
+.block__questions-content .accordion__ditails[open] .accordion__title {
+    color: #292F36;
+}
+.block__questions-content p {
+    margin: 0;
+}
+.block__questions-content .accordion__summary {
+    height: 47px;
+    align-items: center;
+}
+.block__questions-content .accordion__summary::after {
+    width: 18px;
+    top: 20px;
+    right: 0;
+    background-color: #292F36;
+    z-index: 5;
+    rotate: 0deg;
+}
+.block__questions-content .accordion__summary::before {
+    width: 18px;
+    top: 20px;
+    right: 0;
+    background-color: #292F36;
+    rotate: 90deg;
+}
+.block__questions-content .accordion__ditails[open] .accordion__summary::before {
+    width: 18px;
+    display: none;
+}
+.block__questions-content .accordion__ditails[open] .accordion__summary::after {
+    width: 18px;
+    right: 0;
+    rotate: 0deg;
+}
+.check {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.check input {
+    color: #CDA274;
+    display: inline-flex;
+    width: 32px;
+    margin-right: 10px;
+}
+.check p {
+    color: #CDA274;
+    display: inline-block;
+    font-family: 'Jost';
+    font-size: 18px;
+    line-height: 1.25;
+    letter-spacing: 0.5px;
+}

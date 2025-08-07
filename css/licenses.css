@@ -1,0 +1,124 @@
+.photography {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.photography__title {
+    margin-bottom: 25px;
+}
+.photography__container p {
+    font-family: 'Jost';
+    font-size: clamp(16px, 3vw, 22px);
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: #4D5053;
+    max-width: 950px;
+}
+.photography__container p span {
+    font-weight: 700;
+    color: #cda274;
+}
+.photography__container p a {
+    font-weight: 700;
+}
+.unsplash,
+.pixels,
+.fonts {
+    padding-block: 50px;
+}
+.fonts__inner,
+.pixels__inner,
+.unsplash__inner {
+    background-color: #F4F0EC;
+    border-radius: 70px;
+    padding: 70px 45px;
+}
+.unsplash__inner p,
+.pixels__inner p {
+    font-family: 'Jost';
+    font-size: clamp(16px, 3vw, 22px);
+    line-height: 1.5;
+    letter-spacing: 1px;
+    color: #4D5053;
+    max-width: 900px;
+    margin-bottom: 54px;
+}
+.unsplash__galery,
+.pixels__galery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.unsplash__galery-item,
+.pixels__galery-item {
+    border-radius: 30px;
+    overflow: hidden;
+}
+.unsplash__title,
+.pixels__title,
+.icons__title,
+.fonts__title {
+    font-family: 'DMSerifDisplay';
+    font-size: clamp(20px, 4vw, 35px);
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+.fonts__info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 43px;
+}
+.fonts__info p span {
+    color: #cda274;
+}
+.fonts__info p a {
+    font-weight: 700;
+}
+.fonts__info-text {
+    max-width: 500px;
+    font-family: 'Jost';
+    font-size: clamp(16px, 3vw, 22px);
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: #4D5053;
+}
+.fonts__info-simbol {
+    display: flex;
+    gap: 60px;
+    font-size: 85px;
+    align-items: center;
+    line-height: 1.5;
+}
+.fonts__info-simbol-1 {
+    font-family: 'DMSerifDisplay';
+}
+.fonts__info-simbol-2 {
+    font-family: 'Jost';
+}
+.icons__title {
+    margin-top: 16px;
+}
+
+
+@media (max-width: 767.98px) {
+    .unsplash,
+    .pixels,
+    .fonts {
+        padding-block: 25px;
+    }
+    .fonts__inner,
+    .pixels__inner,
+    .unsplash__inner {
+        
+        border-radius: 45px;
+        padding: 20px 20px;
+    }
+    .fonts__info {
+        gap: 0;
+    }
+    .fonts__info-simbol {
+        font-size: 50px;
+        text-align: center;
+    }
+}

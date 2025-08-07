@@ -1,0 +1,91 @@
+.priceing {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.priceing__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px;
+}
+.priceing__item {
+    width: 368px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 64px;
+    border-radius: 33px;
+    background-color: #F4F0EC;
+}
+.priceing__item:hover {
+    box-shadow: 0 10px 20px 0 rgba(136, 136, 136, 0.25);
+}
+.priceing__item:nth-child(2) .item-pr__block {
+    border-bottom: 1px solid #292F36;
+}
+.priceing__item:nth-child(2) span {
+    color: #CDA274;
+}
+.item-pr__block {
+    position: relative;
+    text-align: center;
+    padding-bottom: 37px;
+    border-bottom: 1px solid #CDA274;
+    width: 100%;
+}
+.priceing__item:nth-child(2) .item-pr__block::after {
+    position: absolute;
+    bottom: -20px;
+    right: 50%;
+    transform: translateX(50%);
+    content: 'Most Popular Plans';
+    width: 238px;
+    background-color: black;
+    color: #fff;
+    padding: 10px 38px;
+    font-size: 18px;
+    line-height: 1.25;
+    border-radius: 18px;
+}
+.item-pr__block p {
+    margin-inline: auto;
+    font-family: 'DMSerifDisplay';
+    font-size: 25px;
+    width: 108px;
+}
+.item-pr__block p span {
+    font-size: 85px;
+}
+.item-pr__info {
+    text-align: center;
+    padding-block: 28px;
+}
+.item-pr__info p {
+    font-family: 'Jost';
+    font-size: 20px;
+    line-height: 2.5;
+    letter-spacing: 0.5px;
+    color: #4D5053;
+}
+.item-pr__btn.btn:hover {
+   background-color: #292f36;
+}
+.item-pr__btn.btn:hover path {
+    stroke:#CDA274;
+}
+.item-pr__btn.btn {
+    margin: 0;
+    background-color: #CDA274;
+    box-shadow: 0 10px 20px 0 rgba(192, 192, 192, 0.35);
+}
+
+@media (max-width: 575.98px) {
+    .priceing {
+        padding-block: 50px;
+    }
+    .item-pr__info p {
+        font-size: 18px;
+        line-height: 1.5;
+    }
+}

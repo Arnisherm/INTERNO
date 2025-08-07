@@ -1,0 +1,126 @@
+.intro {
+    padding-block: 75px;
+}
+.intro__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.intro__title {
+    max-width: 460px;
+    text-transform:none;
+}
+.intro__text {
+    max-width: 655px;
+    font-family: 'Jost';
+    font-size: clamp(16px, 3vw, 22px);
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: #4D5053;
+}
+.intro__text p:not(:last-child) {
+    margin-bottom: 30px;
+}
+.intro__text span {
+    display: inline-block;
+    font-size: 25px;
+    color: #CDA274;
+    margin-bottom: 30px;
+}
+.video__content {
+    position: relative;
+    border-radius: 70px;
+    overflow: hidden;
+    aspect-ratio: 6 / 2;
+}
+.video__content iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.points {
+    padding-block: 75px;
+}
+.points__inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 82px;   
+}
+.points__item-title {
+    margin-bottom: 23px;
+}
+.points__item-list {
+    counter-reset: ol-numbers;
+}
+.points__item-list li {
+    position: relative;
+    padding: 0 0 0 20px;
+    font-family: 'Jost';
+    font-size: clamp(16px, 3vw, 22px);
+    line-height: 2.7;
+    color: #4D5053;
+}
+.points__item-list li::before {
+    counter-increment: ol-numbers;
+    content: counter(ol-numbers);
+    position: absolute;
+    left: 0;
+    top: 3px;
+    text-align: center;
+    color: #CDA274;
+    font-family: 'DMSerifDisplay';
+    font-size: 20px;
+    width: 12px;
+}
+.result {
+    padding-block: 75px;
+}
+.result__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.result__image {
+    border-radius: 70px;
+    overflow: hidden;
+}
+.result__content {
+    max-width: 520px;
+}
+.result__content-title {
+    margin-bottom: 11px;
+}
+.result__content p {
+    margin-bottom: 32px;
+    font-family: 'Jost';
+    font-size: clamp(16px, 3vw, 22px);
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: #4D5053;
+}
+
+@media (max-width: 575.98px) {
+    .result {
+        padding-block: 20px;
+    }
+    .points__item-list li {
+        line-height: 1.5;
+    }
+    .points__item-list li::before {
+        top: 0;
+        font-size: 15px;
+    }
+    .points__item {
+        margin-bottom: 20px;
+    }
+    .points__inner {
+        padding-inline: 15px;
+    }
+}

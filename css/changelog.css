@@ -1,0 +1,14 @@
+.initial {
+    padding-block: 100px;
+}
+.initial__inner {
+    background-color: #F4F0EC;
+    border-radius: 70px;
+}
+.initial__heading {
+    padding-block: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
